@@ -1,0 +1,3 @@
+{
+    "cmake.sourceDirectory": "${workspaceFolder}/Phone2/firmware/bt_esp32"
+}

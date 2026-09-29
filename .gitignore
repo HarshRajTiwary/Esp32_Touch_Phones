@@ -1,0 +1,20 @@
+# Build directories and intermediate files
+build/
+**/build/
+.cache/
+**/.cache/
+*.bin
+*.elf
+*.map
+*.hex
+*.o
+*.a
+*.d
+sdkconfig
+sdkconfig.old
+
+# OS / Environment files
+.DS_Store
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/

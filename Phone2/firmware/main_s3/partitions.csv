@@ -1,0 +1,11 @@
+# Phone2 ESP32-S3 phone - 16 MB flash.
+# Two app slots so OTA updates can be added later without re-partitioning;
+# a core-dump partition keeps the last crash for Settings > Diagnostics.
+# Name,   Type, SubType,  Offset,    Size
+nvs,      data, nvs,      0x9000,    0x10000
+otadata,  data, ota,      0x19000,   0x2000
+phy_init, data, phy,      0x1b000,   0x1000
+ota_0,    app,  ota_0,    0x20000,   0x400000
+ota_1,    app,  ota_1,    0x420000,  0x400000
+coredump, data, coredump, 0x820000,  0x10000
+storage,  data, littlefs, 0x830000,  0x7D0000
